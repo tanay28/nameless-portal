@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src="assets/img/intro/Nameless logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top"> NAMELESS
+        </a>
+        <div class="button">
+
+            <a href="https://www.facebook.com/namelessgroup2020" target="blank">
+
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/c/Nameless2020" target="blank">
+
+                <i class="fab fa-youtube"></i>
+            </a>
+
+
+
+
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="myactive" [routerLinkActiveOptions]="{exact : true}"> HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/about" routerLinkActive="myactive"> ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/works" routerLinkActive="myactive"> OUR WORKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/gallery" routerLinkActive="myactive"> GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/team" routerLinkActive="myactive"> TEAM </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact" routerLinkActive="myactive">CONTACT US</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- <app-home></app-home>
+<app-about></app-about>
+<app-our-works></app-our-works>
+<app-gallery></app-gallery>
+<app-our-team></app-our-team> -->
+<router-outlet></router-outlet>

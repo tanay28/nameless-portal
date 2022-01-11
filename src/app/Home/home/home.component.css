@@ -1,0 +1,35 @@
+.img {
+    width: 100%;
+}
+
+#img1 {
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0 !important;
+    margin: -20 !important;
+}
+
+body {
+    overflow-y: none;
+}
+
+.btn-danger {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    background-color: red!important;
+}
+
+.btn-primary {
+    position: absolute;
+    top: 70%;
+    left: 23%;
+}
+
+@media (max-width: 1400px) {
+    .btn {
+        display: none;
+    }
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400&display=swap');
+section {
+    background-color: rgba(255, 250, 158, 0.281);
+    width: 100%;
+    height: inherit;
+}
+
+.para {
+    text-align: center;
+    padding: 0 20%;
+    /* padding: 50px; */
+    margin-top: 0;
+    padding-top: 3%;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.para p {
+    margin-top: 3%;
+    font-family: 'BioRhyme', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card-box {
+    margin-top: 5%;
+    ;
+}
+
+.card-box .image {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.img-fluid {
+    width: 300px;
+}
+
+.aboutus {
+    margin-top: 0;
+}
+
+.image img {
+    margin: 15px;
+}
+
+.image img:hover {
+    transform: scale(1.2);
+}
+
+.achievement {
+    text-align: center;
+    margin-top: 10%;
+    /* border: 1px solid black; */
+}
+
+.photo .image1 {
+    position: relative;
+    display: inline-block;
+    padding: 11px 3px;
+    margin: 25px 5px;
+    width: 200px;
+    border-radius: 300px;
+    /* border: 1px solid black; */
+}
+
+.photo img {
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    object-fit: cover;
+}
+
+.image1 img:hover {
+    transform: scale(1.2);
+}
+
+.photo {
+    margin-top: 5%;
+}
