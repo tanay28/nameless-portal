@@ -125,7 +125,7 @@ p {
     margin-top: 12px;
 }
 
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -157,6 +157,12 @@ p {
     position: relative;
     bottom: 28px;
     left: 27px;
+}
+
+.err-info {
+    margin: 10px;
+    color: red;
+    font-weight: bold;
 }
 
 @media (max-width: 950px) {

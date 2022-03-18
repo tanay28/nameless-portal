@@ -11,14 +11,7 @@
                     <div class="text-one">Nabagram, Hooghly</div>
                     <div class="text-two"> pin: 712246</div>
                 </div>
-                <!-- <div class="phone details">
-                    <i class="fas fa-phone"></i>
-                    <div class="topic">Phone</div>
-                    <div class="text-one">+0098 9893 5647</div>
-                    <div class="text-two">+0096 3434 5678</div>
-                </div>  -->
                 <div class="email details">
-                    <!-- <i class="fas fa-envelope"></i> -->
                     <div class="topic">Email</div>
                     <div class="text-one">namelessgroup2020@gmail.com</div>
 
@@ -27,22 +20,23 @@
             <div class="right-side">
                 <div class="topic-text">Send us a message</div>
                 <p>If you have any feedback or any types of quries related to our team, you can send us message from here. It'll be our pleasure.</p>
-                <form action="#">
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit()" method="POST">
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="Enter your name" (focus)="onFocus()"  formControlName="fullName" required>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your email">
+                        <input type="text" placeholder="Enter your email" (focus)="onFocus()" formControlName="emailId" required>
                     </div>
                     <div class="input-box message-box">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        <textarea cols="30" rows="10" placeholder="Enter your message" formControlName="msgDes"></textarea>
                     </div>
                     <div class="input-box">
-                        <input type="checkbox" class="check-box"> <span class="check-box-label"><p>Check this for latest updates.!!</p></span>
+                        <input type="checkbox" class="check-box" (click)="onCheck($event)" > <span class="check-box-label"><p>Check this for latest updates.!!</p></span>
                     </div>
                     <div class="button">
-                        <input type="button" value="Send Now">
+                        <input type="submit" value="Send Now">
                     </div>
+                    <span class="err-info">{{errMsg}}</span>
                 </form>
             </div>
         </div>

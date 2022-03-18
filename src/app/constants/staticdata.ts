@@ -128,5 +128,83 @@ export const staticdata = {
             isActive : true
         }
     ],
+    teams : {
+        founders : [
+            {
+                imgUrl : 'assets/img/Members/sayan.jpg',
+                fullName : 'SAYAN DEY',
+                role : 'EDITOR,ACTOR,DIRECTOR'
+            }
+        ],
+        others : [
+            {
+                imgUrl : 'assets/img/Members/subhajit.jpg',
+                fullName : 'SUBHAJIT ADHYA',
+                role : 'ACTOR,WRITER'
+            },
+            {
+                imgUrl : 'assets/img/Members/budha.JPG',
+                fullName : 'BUDHADITYA MUKHERJEE',
+                role : 'MUSICIAN,ACTOR'
+            },
+            {
+                imgUrl : 'assets/img/Members/tuhin.jpg',
+                fullName : 'TUHIN MUKHERJEE',
+                role : 'WRITER,ACTOR'
+            },
+            {
+                imgUrl : 'assets/img/Members/tanay.jpg',
+                fullName : 'TANAY MUKHERJEE',
+                role : 'DIRECTOR'
+            },
+            {
+                imgUrl : 'assets/img/Members/anushi.jpg',
+                fullName : 'ANUSHI DEY',
+                role : 'ACTRESS'
+            },
+            {
+                imgUrl : 'assets/img/Members/priyas.jpg',
+                fullName : 'PRIYAS DEB',
+                role : 'ACTOR'
+            },
+            {
+                imgUrl : 'assets/img/Members/ankan.jpg',
+                fullName : 'ANKAN BHATTACHARJEE',
+                role : 'CAMERA,DOP'
+            },
+            {
+                imgUrl : 'assets/img/Members/ria.jpg',
+                fullName : 'RIA DAS',
+                role : 'ACTRESS'
+            },
+            {
+                imgUrl : 'assets/img/Members/shubham.jpg',
+                fullName : 'SHUBHAM GANGULY',
+                role : 'ACTOR'
+            },
+            {
+                imgUrl : 'assets/img/Members/somnath.jpg',
+                fullName : 'SOMNATH MUKHERJEE',
+                role : 'MUSICIAN'
+            }
+        ],
+        technicals : [
+            {
+                imgUrl : 'assets/img/Members/tanay.jpg',
+                fullName : 'TANAY MUKHOPADHYAY',
+                links : 'https://www.linkedin.com/in/tanay-mukhopadhyay-464525121/,https://www.facebook.com/tanay.mukhopadhyay'
+            },
+            {
+                imgUrl : 'assets/img/Members/swita.jpg',
+                fullName : 'SWITA SHAW',
+                links : 'https://www.linkedin.com/in/swita-shaw-b46a871b5/,https://www.facebook.com/profile.php?id=100068790460825'
+            },
+            {
+                imgUrl : 'assets/img/Members/sayan.jpg',
+                fullName : 'SAYAN DEY',
+                links : 'https://www.linkedin.com/in/sayan-dey-624770212/,https://www.facebook.com/profile.php?id=100048758451159'
+            }
+        ]
+    }
 
 };
