@@ -46,75 +46,73 @@ export const staticdata = {
             ],
             musicVideos : [
                 {
-                    poster : 'assets/img/music video/hete cholar gan.jpg',
+                    posterImgUrl : 'assets/img/music video/hete cholar gan.jpg',
                     song : 'HETE CHOLAR GAAN',
                     singer : 'BUDHADITYA MUKHERJEE',
-                    link : 'https://www.youtube.com/watch?v=EOrrFk2yrlc'
+                    youtubeLink : 'https://www.youtube.com/watch?v=EOrrFk2yrlc'
                 },
                 {
-                    poster : 'assets/img/music video/aaj jane ki.jpg',
+                    posterImgUrl : 'assets/img/music video/aaj jane ki.jpg',
                     song : 'AAJ JANE KI ZID NA KARO',
                     singer : 'ARIJIT SINGH',
-                    link : 'https://www.youtube.com/watch?v=3LO82Uf1Z3M'
+                    youtubeLink : 'https://www.youtube.com/watch?v=3LO82Uf1Z3M'
                 },
                 {
-                    poster : 'assets/img/music video/ashique teri.png',
+                    posterImgUrl : 'assets/img/music video/ashique teri.png',
                     song : 'ASHIQUW TERI',
                     singer : 'SOMNATH MUKHERJEE',
-                    link : 'https://www.youtube.com/watch?v=WaWFBKDx9YI'
+                    youtubeLink : 'https://www.youtube.com/watch?v=WaWFBKDx9YI'
                 },
                 {
-                    poster : 'assets/img/music video/sada golap.png',
+                    posterImgUrl : 'assets/img/music video/sada golap.png',
                     song : 'SADA GOLAP',
                     singer : 'SOMNATH MUKHERJEE',
-                    link : 'https://www.youtube.com/watch?v=EOrrFk2yrlc'
+                    youtubeLink : 'https://www.youtube.com/watch?v=EOrrFk2yrlc'
                 }
             ],
             audioStory : [
                 {
-                    poster : 'assets/img/audio story/budhhir baire.jpg',
+                    posterImgUrl : 'assets/img/audio story/budhhir baire.jpg',
                     story : 'BUDHHIR BAIRE',
                     writer : 'NARAYAN GANGAPADHYAY',
-                    link : 'https://www.youtube.com/watch?v=EQ_tNpnerP0&t=521s'
+                    youtubeLink : 'https://www.youtube.com/watch?v=EQ_tNpnerP0&t=521s'
                 },
                 {
-                    poster : 'assets/img/audio story/kaktarua.jpg',
+                    posterImgUrl : 'assets/img/audio story/kaktarua.jpg',
                     story : 'KAKTARUA',
                     writer : 'SATYAJIT RAY',
-                    link : 'https://www.youtube.com/watch?v=EkkVmyznudA'
+                    youtubeLink : 'https://www.youtube.com/watch?v=EkkVmyznudA'
                 },
                 {
-                    poster : 'assets/img/audio story/rajar asukh.jpg',
+                    posterImgUrl : 'assets/img/audio story/rajar asukh.jpg',
                     story : 'RAJAR ASUKH',
                     writer : 'SUKUMAR RAY',
-                    link : 'https://www.youtube.com/watch?v=EQ_tNpnerP0&t=521s'
+                    youtubeLink : 'https://www.youtube.com/watch?v=EQ_tNpnerP0&t=521s'
                 },
                 {
-                    poster : 'assets/img/audio story/bhalobasa.jpg',
+                    posterImgUrl : 'assets/img/audio story/bhalobasa.jpg',
                     story : 'BHALOBASA',
                     writer : 'SADAT HUSSAIN',
-                    link : 'https://www.youtube.com/watch?v=HxBr1JUeJaQ'
+                    youtubeLink : 'https://www.youtube.com/watch?v=HxBr1JUeJaQ'
                 }
             ],
             trailer : [
                 {
-                    poster : 'assets/img/Short film/diary.jpg',
-                    link : 'https://www.facebook.com/114503343519171/videos/347305463531542'
+                    posterImgUrl : 'assets/img/Short film/diary.jpg',
+                    youtubeLink : 'https://www.facebook.com/114503343519171/videos/347305463531542'
                 },
                 {
-                    poster : 'assets/img/Short film/boroda o bohurupi.jpg',
-                    link : 'https://www.facebook.com/114503343519171/videos/615060372508866'
+                    posterImgUrl : 'assets/img/Short film/boroda o bohurupi.jpg',
+                    youtubeLink : 'https://www.facebook.com/114503343519171/videos/615060372508866'
                 },
                 {
-                    poster : 'assets/img/Short film/nepotism.jpg',
-                    link : 'https://www.facebook.com/114503343519171/videos/977094066145373'
+                    posterImgUrl : 'assets/img/Short film/nepotism.jpg',
+                    youtubeLink : 'https://www.facebook.com/114503343519171/videos/977094066145373'
                 }
             ],
             upcoming : [
                 {
-                    genre : 'SOCIO POLITICAL DRAMA',
                     posterImgUrl: 'assets/img/Short film/kolomer fake.png',
-                    shortdes: "It's a conversion of a failure poet and a poor drunk person about their views on society.",
                     youtubeLink: 'https://www.youtube.com/c/Nameless2020'
                 },
             ]
@@ -192,17 +190,17 @@ export const staticdata = {
             {
                 imgUrl : 'assets/img/Members/tanay.jpg',
                 fullName : 'TANAY MUKHOPADHYAY',
-                links : 'https://www.linkedin.com/in/tanay-mukhopadhyay-464525121/,https://www.facebook.com/tanay.mukhopadhyay'
+                links : {}
             },
             {
                 imgUrl : 'assets/img/Members/swita.jpg',
                 fullName : 'SWITA SHAW',
-                links : 'https://www.linkedin.com/in/swita-shaw-b46a871b5/,https://www.facebook.com/profile.php?id=100068790460825'
+                links : {}
             },
             {
                 imgUrl : 'assets/img/Members/sayan.jpg',
                 fullName : 'SAYAN DEY',
-                links : 'https://www.linkedin.com/in/sayan-dey-624770212/,https://www.facebook.com/profile.php?id=100048758451159'
+                links : {}
             }
         ]
     }

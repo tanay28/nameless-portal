@@ -93,6 +93,10 @@ p {
     /* margin-left: calc(var(--bs-gutter-x) * -.5); */
 }
 
+.upcoming-title {
+    margin-top: 0px;
+}
+
 .container {
     text-align: center;
     padding-bottom: 20px;

@@ -8,7 +8,7 @@
     </div>
 
     <!-- Short Film -->
-    <div class="shortfilm" data-aos="fade-up" duration="3000" data-aos-offset="200" *ngIf="shortFilms.length > 0">
+    <div class="shortfilm" *ngIf="shortFilms.length > 0">
         <div class="shortfilm"><h2>Short Films</h2></div>
         <div class="container-card" *ngFor="let film of shortFilms">
             <div class="image"><img id="img1" src="{{film.posterImgUrl}}" alt="" width="100%"></div>
@@ -22,15 +22,15 @@
 
     <!-- music video -->
     <div class="container mb-10" *ngIf="musicVideos.length > 0">
-        <div class="my-auto container text-center"><h2>Music Videos</h2></div>
-        <div class="row justify-content-center" data-aos="fade-up" duration="2000" data-aos-offset="200">
+        <div class="shortfilm"><h2>Music Videos</h2></div>
+        <div class="row justify-content-center">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box-card" *ngFor="let mvideo of musicVideos">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="{{mvideo.poster}}" alt="">
+                    <img class="img-responsive" src="{{mvideo.posterImgUrl}}" alt="">
                     <div class="overlay">
                         <p>SONG : <b>{{mvideo.song}}</b></p>
                         <p>SINGER : <b>{{mvideo.singer}}</b></p>
-                        <a class="info" href="{{mvideo.link}}" target="blank">Watch Now</a>
+                        <a class="info" href="{{mvideo.youtubeLink}}" target="blank">Watch Now</a>
                     </div>
                 </div>
             </div>
@@ -39,15 +39,15 @@
 
     <!-- Audio Story -->
     <div class="container" *ngIf="audioStory.length > 0">
-        <div class="container text-center my-auto"><h2>Audio Stories</h2></div>
-        <div class="row justify-content-center" data-aos="fade-up" duration="2000" data-aos-offset="100">
+        <div class="shortfilm"><h2>Audio Stories</h2></div>
+        <div class="row justify-content-center">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box-img" *ngFor="let story of audioStory">
                 <div class="hoveffect">
-                    <img class="img-responsive rounded" src="{{story.poster}}" alt="">
+                    <img class="img-responsive rounded" src="{{story.posterImgUrl}}" alt="">
                     <div class="ovlay">
                         <p>STORY : <b>{{story.story}}</b></p>
                         <p>WRITER : <b>{{story.writer}}</b></p>
-                        <a class="info btn" href="{{story.link}}" target="blank">Watch Now</a>
+                        <a class="info btn" href="{{story.youtubeLink}}" target="blank">Watch Now</a>
                     </div>
                 </div>
             </div>
@@ -56,13 +56,13 @@
 
     <!--Trailers -->
     <div class="container-fluid" *ngIf="trailers.length > 0">
-        <div class="container my-auto text-center"><h2>Trailers</h2></div>
-        <div class="row justify-content-center" data-aos="fade-up" duration="2000" data-aos-offset="200">
+        <div class="shortfilm"><h2>Trailers</h2></div>
+        <div class="row justify-content-center">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box-card" *ngFor="let trailer of trailers">
                 <div class="heffect">
-                    <img class="img-responsive" src="{{trailer.poster}}" alt="">
+                    <img class="img-responsive" src="{{trailer.posterImgUrl}}" alt="">
                     <div class="olay">
-                        <p><a href="{{trailer.link}}" target="blank">WATCH NOW</a></p>
+                        <p><a href="{{trailer.youtubeLink}}" target="blank">WATCH NOW</a></p>
                     </div>
                 </div>
             </div>
@@ -71,13 +71,11 @@
 
     <!--Upcoming Films -->
     <div class="container-fluid text-center" *ngIf="upcomings.length > 0">
-        <div class="works"><div class="shortfilm"><h2>Upcoming Films</h2></div></div>
-        <div class="shortfilm" data-aos="fade-up" duration="3000" data-aos-offset="200">
+        <div class="shortfilm"><h2>Upcoming Contents</h2></div>
+        <div class="shortfilm upcoming-title">
             <div class="container-card" *ngFor="let upcoming of upcomings">
                 <div class="image"><img id="img11" src="{{upcoming.posterImgUrl}}" alt="" width="100%"></div>
                 <div class="middle1">
-                    <p>GENRE : <b>{{upcoming.genre}}</b></p>
-                    <p>{{upcoming.shortdes}}</p>
                     <a class="btn btn-danger" href="{{upcoming.youtubeLink}}" target="blank">Watch Now</a>
                 </div>
             </div>
