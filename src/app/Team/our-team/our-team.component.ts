@@ -82,12 +82,24 @@ export class OurTeamComponent implements OnInit {
         modifiedRoles = element.role.split(',').filter((element: any) => {
           return (element != 'WEB DEVELOPER' && element != 'FOUNDER');
        });
+       let roles = element.role.split(',');
+       if(!roles.includes(this.type.founder)) {
         const obj = {
           imgUrl : element.imgUrl,
           fullName : element.fullName,
           role :  modifiedRoles.toString()
-        }
+        };
         teamdata.push(obj);
+       } else {
+        if(roles.includes(this.type.developer)) {
+          const obj = {
+            imgUrl : element.imgUrl,
+            fullName : element.fullName,
+            role :  modifiedRoles.toString()
+          };
+          teamdata.push(obj);
+        }
+       }
       }
      
     });
