@@ -48,11 +48,11 @@ export class OurWorksComponent implements OnInit {
       await this.getAllContent();
     } catch(err) {
       this.resetContents();
-      this.shortFilms = staticdata.ourwork.contents.shortFilms;
-      this.musicVideos = staticdata.ourwork.contents.musicVideos;
-      this.audioStory = staticdata.ourwork.contents.audioStory;
-      this.trailers = staticdata.ourwork.contents.trailer;
-      this.upcomings = staticdata.ourwork.contents.upcoming;
+      // this.shortFilms = staticdata.ourwork.contents.shortFilms;
+      // this.musicVideos = staticdata.ourwork.contents.musicVideos;
+      // this.audioStory = staticdata.ourwork.contents.audioStory;
+      // this.trailers = staticdata.ourwork.contents.trailer;
+      // this.upcomings = staticdata.ourwork.contents.upcoming;
     }
   
   }
@@ -109,12 +109,11 @@ export class OurWorksComponent implements OnInit {
       this.fbService.getAllContentData().subscribe(res => {
         if(res.length > 0) {
           this.resetContents();
-          this.shortFilms = this.filerContents('short_film',res).length > 0 ? this.filerContents('short_film',res) : staticdata.ourwork.contents.shortFilms;
-          this.musicVideos = this.filerContents('music_video',res).length > 0 ? this.filerContents('music_video',res) : staticdata.ourwork.contents.musicVideos;
-          this.audioStory = this.filerContents('audio_story',res).length > 0 ? this.filerContents('audio_story',res) : staticdata.ourwork.contents.audioStory;
-          this.trailers = this.filerContents('trailer',res).length > 0 ? this.filerContents('trailer',res) : staticdata.ourwork.contents.trailer;
-          this.upcomings = this.filerUpcomingContents(res).length > 0 ? this.filerUpcomingContents(res) : staticdata.ourwork.contents.upcoming;
-          console.log(this.upcomings);
+          this.shortFilms = this.filerContents('short_film',res).length > 0 ? this.filerContents('short_film',res) : [];
+          this.musicVideos = this.filerContents('music_video',res).length > 0 ? this.filerContents('music_video',res) : [];
+          this.audioStory = this.filerContents('audio_story',res).length > 0 ? this.filerContents('audio_story',res) : [];
+          this.trailers = this.filerContents('trailer',res).length > 0 ? this.filerContents('trailer',res) : [];
+          this.upcomings = this.filerUpcomingContents(res).length > 0 ? this.filerUpcomingContents(res) : [];
         }
         resolve('ok');
       }, err => {

@@ -28,8 +28,8 @@ export class AboutComponent implements OnInit {
     this.resetData();
     this.isGalleryData = false;
     this.aboutUsData = staticdata.aboutus.textData;
-    this.aboutUsImgData = staticdata.aboutus.imgData;
-    this.achievementsData = staticdata.aboutus.achievementsData;
+    //this.aboutUsImgData = staticdata.aboutus.imgData;
+    //this.achievementsData = staticdata.aboutus.achievementsData;
 
     try {
       await this.getTextData();
@@ -41,8 +41,8 @@ export class AboutComponent implements OnInit {
       await this.getImgData();
     } catch(err) {
       this.resetData();
-      this.aboutUsImgData = staticdata.aboutus.imgData;
-      this.achievementsData = staticdata.aboutus.achievementsData;
+      // this.aboutUsImgData = staticdata.aboutus.imgData;
+      // this.achievementsData = staticdata.aboutus.achievementsData;
     }
   }
 
@@ -82,14 +82,14 @@ export class AboutComponent implements OnInit {
         if(res.length > 0) {
           this.resetData();
           this.isGalleryData = true;
-          this.achievementsData = this.filterImges('achievement',res).length > 0 ? this.filterImges('achievement',res) : staticdata.aboutus.achievementsData;
-          this.aboutUsImgData = this.filterImges('ourgenere',res).length > 0 ? this.filterImges('ourgenere',res) : staticdata.aboutus.imgData;
+          this.achievementsData = this.filterImges('achievement',res).length > 0 ? this.filterImges('achievement',res) : [];
+          this.aboutUsImgData = this.filterImges('ourgenere',res).length > 0 ? this.filterImges('ourgenere',res) : [];
         }
         resolve('ok');
       }, err => {
         this.resetData();
-        this.aboutUsImgData = staticdata.aboutus.imgData;
-        this.achievementsData = staticdata.aboutus.achievementsData;
+        this.aboutUsImgData = [];
+        this.achievementsData = [];
         reject(err);
       });
     });

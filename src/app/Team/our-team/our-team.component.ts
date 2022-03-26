@@ -38,7 +38,7 @@ export class OurTeamComponent implements OnInit {
       // console.log('technicals',this.technicals);
     } catch(err) {
       this.resetData();
-      this.getStatiData();
+      //this.getStatiData();
     }
   }
 
@@ -110,12 +110,12 @@ export class OurTeamComponent implements OnInit {
     return new Promise((resolve, reject) => {
       this.fbService.getAllTeamData().subscribe(res => {
         if(res.length > 0) {
-          this.founders = this.filerTeams(this.type.founder,res).length > 0 ? this.filerTeams(this.type.founder,res) : staticdata.teams.founders;
-          this.technicals = this.filerTeams(this.type.developer,res).length > 0 ? this.filerTeams(this.type.developer,res) : staticdata.teams.technicals;
-          this.others = this.filerTeams('others',res).length > 0 ? this.filerTeams('others',res) : staticdata.teams.others;
+          this.founders = this.filerTeams(this.type.founder,res).length > 0 ? this.filerTeams(this.type.founder,res) : [];
+          this.technicals = this.filerTeams(this.type.developer,res).length > 0 ? this.filerTeams(this.type.developer,res) : [];
+          this.others = this.filerTeams('others',res).length > 0 ? this.filerTeams('others',res) : [];
         } else {
           this.resetData();
-          this.getStatiData();  
+          //this.getStatiData();  
         }
         resolve('ok');
       }, err => {

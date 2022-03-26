@@ -22,13 +22,13 @@ export class GalleryComponent implements OnInit {
 
   async ngOnInit() {
     this.galleryImgs = [];
-    this.galleryImgs = staticdata.gallery;
+    // this.galleryImgs = staticdata.gallery;
 
     try {
       this.getAllGalleryImgs();
     } catch(err) {
       this.galleryImgs = [];
-      this.galleryImgs = staticdata.gallery;
+      // this.galleryImgs = staticdata.gallery;
     }
   }
 
@@ -42,7 +42,7 @@ export class GalleryComponent implements OnInit {
         resolve('ok');
       }, err => {
         this.galleryImgs = [];
-        this.galleryImgs = staticdata.gallery;
+        // this.galleryImgs = staticdata.gallery;
         reject('no data');
       });
     })
